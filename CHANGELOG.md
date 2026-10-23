@@ -1,3 +1,14 @@
+## 0.1.1
+
+### Added
+
+- `userAgentToken(String)` exported: the escaping of `DisplayName.userAgentToken` for any other value that goes
+  into the same header, such as the model an app sends when `read()` gave no name.
+
+### Changed
+
+- Requirements: Android Gradle Plugin 8.13 or later (the plugin builds and runs in an app on 8.13).
+
 ## 0.1.0
 
 ### Added

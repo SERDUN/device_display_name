@@ -191,6 +191,18 @@ void main() {
   });
 
   group('userAgentToken', () {
+    test('any value, not only a DisplayName, is escaped the same way', () {
+      expect(userAgentToken('SM-G525F'), 'SM-G525F');
+      expect(userAgentToken('Tab (Wi-Fi); 2'), 'Tab [Wi-Fi], 2');
+      expect(
+        userAgentToken('Lenovo Tab M8 (4th Gen)'),
+        const DisplayName(
+          'Lenovo Tab M8 (4th Gen)',
+          NameSource.vendorProperty,
+        ).userAgentToken,
+      );
+    });
+
     test('a plain name is kept', () {
       expect(
         const DisplayName(

@@ -18,7 +18,7 @@ export 'src/android_name_choice.dart'
         androidKeysByMaker;
 export 'src/device_kind.dart' show DeviceKind, androidKind, iosKind;
 export 'src/ios_name_choice.dart' show chooseIosName;
-export 'src/labels.dart' show distinctLabels;
+export 'src/labels.dart' show distinctLabels, userAgentToken;
 
 /// Where a [DisplayName] was taken from.
 enum NameSource {

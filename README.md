@@ -29,7 +29,7 @@ every phone: each maker keeps it somewhere else. This plugin knows where, reads 
 ## Requirements
 
 - Flutter 3.47 or later.
-- Android 7.0 (API 24) or later, built with Android Gradle Plugin 9 or later.
+- Android 7.0 (API 24) or later, built with Android Gradle Plugin 8.13 or later.
 - iOS 15 or later.
 
 ## Installation
@@ -88,6 +88,13 @@ distinctLabels([
 ```
 
 `Uri.decodeComponent` turns a `userAgentToken` back into the name.
+
+The same escaping is there for any other value that goes into the same header, such as the model you send when
+`read()` gave no name:
+
+```dart
+userAgentToken(device?.fullName ?? model); // model as device_info_plus reports it: "SM-G525F"
+```
 
 ### Testing
 

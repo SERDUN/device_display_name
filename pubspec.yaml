@@ -1,6 +1,6 @@
 name: device_display_name
 description: "The name a person knows their device by (Redmi 9A, Galaxy XCover 5, iPhone 12 mini) instead of its hardware code, and the kind of device it is."
-version: 0.1.0
+version: 0.1.1
 homepage: https://github.com/SERDUN/device_display_name
 repository: https://github.com/SERDUN/device_display_name
 issue_tracker: https://github.com/SERDUN/device_display_name/issues
