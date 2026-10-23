@@ -1,0 +1,22 @@
+name: device_display_name_example
+description: "Shows what device_display_name gives on the device it runs on."
+publish_to: 'none'
+
+environment:
+  sdk: ^3.13.5
+
+dependencies:
+  flutter:
+    sdk: flutter
+  device_display_name:
+    path: ../
+
+dev_dependencies:
+  integration_test:
+    sdk: flutter
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+
+flutter:
+  uses-material-design: true

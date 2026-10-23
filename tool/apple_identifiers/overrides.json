@@ -1,0 +1,7 @@
+{
+  "_comment": "Identifiers the upstream list does not have yet, or names it gets wrong. Checked against DeviceKit Device.generated.swift and device_info_plus DeviceIdentifiers.m.",
+  "iPhone18,5": "iPhone 17e",
+  "iPhone19,2": "iPhone 18 Pro",
+  "iPhone19,3": "iPhone 18 Pro Max",
+  "iPhone19,7": "iPhone 18 Pro Max"
+}
