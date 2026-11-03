@@ -2,6 +2,12 @@
 
 [![pub package](https://img.shields.io/pub/v/device_display_name.svg)](https://pub.dev/packages/device_display_name)
 
+> **Moved to [device_profile](https://github.com/SERDUN/device_profile)**
+> ([pub.dev](https://pub.dev/packages/device_profile)). `device_profile` gives the same name and the kind of
+> device, and adds whether the display is round, from the same one read. This package and repository are kept
+> for the versions that already depend on them and get no further changes; see
+> [Moving from device_display_name](https://github.com/SERDUN/device_profile#moving-from-device_display_name).
+
 A Flutter plugin that gives the name a person knows their device by - **"Redmi 9A"**, **"Galaxy XCover 5"**,
 **"iPhone 12 mini"** - instead of the hardware code the platform reports as the model ("M2006C3LG", "SM-G525F",
 "iPhone"), and tells what kind of device it is.
