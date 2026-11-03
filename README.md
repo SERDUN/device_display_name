@@ -5,8 +5,19 @@
 > **Moved to [device_profile](https://github.com/SERDUN/device_profile)**
 > ([pub.dev](https://pub.dev/packages/device_profile)). `device_profile` gives the same name and the kind of
 > device, and adds whether the display is round, from the same one read. This package and repository are kept
-> for the versions that already depend on them and get no further changes; see
-> [Moving from device_display_name](https://github.com/SERDUN/device_profile#moving-from-device_display_name).
+> for the versions that already depend on them and get no further changes.
+>
+> | device_display_name | device_profile |
+> |---|---|
+> | `PlatformDeviceDisplayName().read()` -> `DisplayName?` | `PlatformDeviceProfile().read()` -> `DeviceProfile?` |
+> | `DeviceDisplayName` | `DeviceProfileReader` |
+> | `name.name`, `name.fullName`, `name.source` | `profile.name.name`, `profile.name.fullName`, `profile.name.source` |
+> | `name.kind` | `profile.kind` |
+> | - | `profile.screenShape` |
+> | `chooseAndroidName`, `chooseIosName(machine, idiom:)` | `chooseAndroidProfile`, `chooseIosProfile(machine, idiom:)` |
+>
+> The name, its sources and the user-assigned modes are unchanged. The method channel is `device_profile`, so an
+> app moves over in one step.
 
 A Flutter plugin that gives the name a person knows their device by - **"Redmi 9A"**, **"Galaxy XCover 5"**,
 **"iPhone 12 mini"** - instead of the hardware code the platform reports as the model ("M2006C3LG", "SM-G525F",
